@@ -1,0 +1,5 @@
+{
+  "name": "@soon-my-room/utils",
+  "version": "1.0.0",
+  "main": "src/index.ts"
+}
