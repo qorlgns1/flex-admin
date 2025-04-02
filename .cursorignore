@@ -1,0 +1,17 @@
+# Cursorignore
+# Node modules & dependencies
+node_modules
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Turborepo cache
+turbo
+.vscode
+.idea
+
+# Build outputs
+dist
+.next
+out
+coverage
