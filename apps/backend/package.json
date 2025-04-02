@@ -20,6 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@flex-admin/api-types": "workspace:^",
+    "@flex-admin/utils": "workspace:^",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
@@ -29,8 +31,6 @@
     "@nestjs/swagger": "^11.1.0",
     "@nestjs/terminus": "^11.0.0",
     "@nestjs/typeorm": "^11.0.0",
-    "@soon-my-room/api-types": "workspace:^",
-    "@soon-my-room/utils": "workspace:^",
     "@types/bcrypt": "^5.0.2",
     "@types/passport-jwt": "^4.0.1",
     "bcrypt": "^5.1.1",
