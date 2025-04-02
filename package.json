@@ -1,6 +1,7 @@
 {
-  "name": "soon-my-room-mono",
+  "name": "flex-admin",
   "private": true,
+  "license": "Apache-2.0",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",

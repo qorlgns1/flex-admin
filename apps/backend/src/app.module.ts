@@ -1,9 +1,14 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { DatabaseModule } from './shared/infrastructure/persistence/database.module';
-import { configModuleOptions } from './shared/infrastructure/config/configuration';
+import { DatabaseModule } from './infrastructure/persistence/database.module';
+import { configModuleOptions } from './infrastructure/config/configuration';
+import { UsersModule } from './modules/users/users.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { ProjectsModule } from './modules/projects/projects.module';
+import { ContentModule } from './modules/contents/contents.module';
+import { SettingsModule } from './modules/settings/settings.module';
+import { ApiModule } from './modules/apis/apis.module';
+import { HealthModule } from './modules/health/health.module';
 
 @Module({
   imports: [
@@ -11,8 +16,15 @@ import { configModuleOptions } from './shared/infrastructure/config/configuratio
       ...configModuleOptions,
     }),
     DatabaseModule,
+    UsersModule,
+    AuthModule,
+    ProjectsModule,
+    ContentModule,
+    SettingsModule,
+    ApiModule,
+    HealthModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}

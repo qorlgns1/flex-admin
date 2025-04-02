@@ -1,5 +1,5 @@
 {
-  "name": "@soon-my-room/utils",
+  "name": "@flex-admin/utils",
   "version": "1.0.0",
   "main": "src/index.ts"
 }
